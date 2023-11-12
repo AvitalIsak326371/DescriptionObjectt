@@ -1,0 +1,49 @@
+משרד רואי חשבון
+
+תיאור הפרויקט:
+מערכת לניהול פגישות במשרד רו"ח.
+באמצעות המערכת ניתן לקבוע פגישה  לרואה חשבון ונהל את כלל הפגישות במשרד.
+
+ישויות:
+רואה חשבון
+לקוח
+פגישה
+
+מיפוי Rout  ללקוח:
+שליפת רשימת הלקוחות:
+GET https://Acpa.co.il/clients
+
+שליפת לקוח לפי מזהה:
+GET https://Acpa.co.il/clients/1
+
+הוספת לקוח:
+POST https://Acpa.co.il/clients
+
+עדכון לקוח:
+PUT https://Acpa.co.il/clients/1
+
+עדכון סטטוס:
+PUT https://Acpa.co.il/clients/1/status
+מיפוי Rout  לרו"ח:
+שליפת רשימת רו"ח:
+GET https://Acpa.co.il/cpa
+שליפת רו"ח לפי מזהה:
+GET https://Acpa.co.il/cpa/1
+הוספת רו"ח:
+POST https://Acpa.co.il/cpa
+עדכון רו"ח:
+PUT https://Acpa.co.il/cpa/1
+עדכון סטטוס:
+PUT https://Acpa.co.il/cpa/1/status
+
+מיפוי Rout  לפגישות:
+שליפת רשימת הפגישות:
+GET https:// Acpa.co.il/meeting
+שליפת פגישה לפי מזהה:
+GET https:// Acpa.co.il/meeting/1
+הוספת פגישה:
+POST https:// Acpa.co.il/meeting
+עדכון פגישה:
+PUT https:// Acpa.co.il/meeting/1
+מחיקת פגישה:
+DELETE https:// Acpa.co.il/meeting/1
